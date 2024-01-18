@@ -6,10 +6,10 @@ Simple, beautiful, and (eventually) effective nvim config
 - clone repo into ~/.config/nvim
 
 #### General setup
-term emulator: kitty
-bash prompt: liquidprompt
-nerd font: IosevkaTerm Nerd Font
+- term emulator: kitty
+- bash prompt: liquidprompt
+- nerd font: IosevkaTerm Nerd Font
 
 #### LSPs
-rust: rust-analyzer
-python: pyright
+- rust: rust-analyzer
+- python: pyright
