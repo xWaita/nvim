@@ -1,6 +1,11 @@
 ## xWaita's nvim configuration
-pre-requisites: 
-- install a nerd font into terminal emulator (i use kitty)
-- nvim
+Simple, beautiful, and (eventually) effective nvim config
 
-clone into ~/.config/nvim
+#### Install steps: 
+- install nvim
+- clone repo into ~/.config/nvim
+
+#### General setup
+- term emulator: kitty
+- bash prompt: liquidprompt
+- nerd font: IosevkaTerm Nerd Font
