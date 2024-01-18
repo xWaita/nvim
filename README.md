@@ -1,5 +1,5 @@
 ## xWaita's nvim configuration
-Simple, beautiful, and (eventually) effective nvim config
+Config to create a simple, beautiful, and (eventually) effective nvim experience
 
 #### Install steps: 
 - install nvim 
