@@ -16,9 +16,22 @@ local plugins = {
     {
         'nvim-telescope/telescope.nvim', tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
-    }
+    },
+    {'akinsho/toggleterm.nvim', version = "*", config = true}
 }
 require("lazy").setup(plugins, opts)
+
+require("toggleterm").setup{
+    direction = "horizontal",
+    size = 90,
+    open_mapping = [[<M-j>]]
+}
+
+vim.keymap.set('n', '<leader>f', 
+    require('telescope.builtin').current_buffer_fuzzy_find, 
+    { desc = '[/] Fuzzily search in current buffer'}
+)
+vim.keymap.set('n', '<leader>p', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 
 vim.cmd.colorscheme "catppuccin"
 vim.opt.clipboard = unnamedplus
