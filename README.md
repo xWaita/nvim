@@ -5,11 +5,11 @@ Config to create a simple, beautiful, and (eventually) effective nvim experience
 - install nvim 
 - clone repo into ~/.config/nvim
 
-#### General setup
-- term emulator: kitty
-- bash prompt: liquidprompt
-- nerd font: IosevkaTerm Nerd Font
-
 #### LSPs
 - rust: rust-analyzer
 - python: pyright
+
+#### General setup (optional)
+- term emulator: kitty
+- bash prompt: liquidprompt
+- nerd font: IosevkaTerm Nerd Font
