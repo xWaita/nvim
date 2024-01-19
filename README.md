@@ -1,10 +1,13 @@
 ## xWaita's nvim configuration
-Setup for creating a simple, beautiful, and (eventually) effective terminal and nvim experience
+Config for creating a simple, beautiful, and (eventually) effective nvim experience.
+
+Also contains information about the rest of my terminal setup, for reproducibility purposes.
 
 #### General setup
 - term emulator: kitty
 - bash prompt: liquidprompt
 - nerd font: IosevkaTerm Nerd Font
+- clipboard: xclip
 
 #### Install steps: 
 - install nvim 
