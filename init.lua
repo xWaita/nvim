@@ -40,6 +40,8 @@ vim.keymap.set('n', '<leader>f',
     { desc = '[/] Fuzzily search in current buffer'}
 )
 vim.keymap.set('n', '<leader>p', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
+vim.keymap.set('n', '<leader>g', require('telescope.builtin').live_grep, { desc = '[L]ive [G]rep' })
+vim.keymap.set('n', '<leader>b', require('telescope.builtin').buffers, { desc = '[B]uffers' })
 
 require('toggleterm').setup{
     direction = 'horizontal',
