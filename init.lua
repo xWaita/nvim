@@ -19,6 +19,7 @@ local plugins = {
     },
     { 'akinsho/toggleterm.nvim', version = '*', config = true },
     { 'neovim/nvim-lspconfig' },
+    { 'f-person/git-blame.nvim' },
 
     { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-nvim-lsp' },
