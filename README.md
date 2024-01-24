@@ -1,13 +1,10 @@
 ## xWaita's nvim configuration
-Config for creating a simple, beautiful, and (eventually) effective nvim experience.
-
 Also contains information about the rest of my terminal setup, for reproducibility purposes.
 
 #### General setup
-- term emulator: kitty
-- bash prompt: liquidprompt
+- term emulator: kitty (refer to backup/kitty.conf for kitty setup)
+- bash prompt: liquidprompt (powerline theme)
 - nerd font: IosevkaTerm Nerd Font
-- clipboard: xclip
 
 #### Install steps: 
 - install nvim 
@@ -16,7 +13,8 @@ Also contains information about the rest of my terminal setup, for reproducibili
 #### Optional deps
 - ripgrep (used by telescope)
 - sharkdp (used by telescope)
+- a clipboard command to enable system clipboard support, such as xclip
 
 #### LSPs
 - rust: rust-analyzer
-- python: pyright
+- python: pyright, ruff
