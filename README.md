@@ -2,7 +2,7 @@
 Also contains information about the rest of my terminal setup, for reproducibility purposes.
 
 #### General setup
-- term emulator: kitty (refer to backup/kitty.conf for kitty setup)
+- term emulator: kitty
 - bash prompt: liquidprompt (powerline theme)
 - nerd font: IosevkaTerm Nerd Font
 
