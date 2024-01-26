@@ -5,7 +5,7 @@ function sort_import_sync()
     -- timeout defaults to 1000 but this may be too short depending on machine and codebase size
     local timeout = 1000
     -- TODO: detect offset encoding from lsp client
-    local offset_encoding = "utf-16"
+    local offset_encoding = 'utf-16'
 
     local params = vim.lsp.util.make_range_params()
     params.context = { 
@@ -13,7 +13,7 @@ function sort_import_sync()
         triggerKind = vim.lsp.protocol.CodeActionTriggerKind.Invoked, 
         only = { 'source.organizeImports' },
     }
-    local result = vim.lsp.buf_request_sync(0, "textDocument/codeAction", params, timeout)
+    local result = vim.lsp.buf_request_sync(0, 'textDocument/codeAction', params, timeout)
 
     for _, res in pairs(result or {}) do
         for _,r in pairs(res.result or {}) do
