@@ -5,14 +5,18 @@ return {
         lspconfig.pyright.setup {}
         lspconfig.rust_analyzer.setup {}
 
-        -- Use LspAttach autocommand to only map the following keys
-        -- after the language server attaches to the current buffer
+        -- auto format files using the attached lsp on save
+        vim.api.nvim_create_autocmd('BufWritePre', {
+            group = vim.api.nvim_create_augroup('AutoFormatting', {}),
+            callback = function()
+                vim.lsp.buf.format({ async = true  })
+            end,
+        })
+
+        -- LspAttach maps keys after the lsp attaches to the current buffer
         vim.api.nvim_create_autocmd('LspAttach', {
             group = vim.api.nvim_create_augroup('UserLspConfig', {}),
             callback = function(ev)
-                -- Enable completion triggered by <c-x><c-o>
-                --vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
-
                 -- Buffer local mappings.
                 -- See `:help vim.lsp.*` for documentation on any of the below functions
                 local opts = { buffer = ev.buf }
@@ -30,7 +34,7 @@ return {
                 vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
                 vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
                 vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-                vim.keymap.set('n', '<space>f', function()
+                vim.keymap.set('n', '<space>l', function()
                     vim.lsp.buf.format { async = true }
                 end, opts)
                 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
