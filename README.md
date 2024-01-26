@@ -17,4 +17,5 @@ Also contains information about the rest of my terminal setup, for reproducibili
 
 #### LSPs
 - rust: rust-analyzer
-- python: pyright, ruff
+- python type checked: pyright
+- python formatter/linter: ruff-lsp
