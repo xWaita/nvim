@@ -6,7 +6,7 @@ return {
             direction = 'horizontal',
             size = 90,
             insert_mappings = false,
-            open_mapping = [[<leader>j]]
+            open_mapping = [[<A-j>]]
         }
     end,
 }
