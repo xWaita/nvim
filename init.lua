@@ -28,6 +28,10 @@ local plugins = {
 }
 require('lazy').setup(plugins, opts)
 
+-- swap jumplist commands
+vim.keymap.set('n', '<c-i>', '<c-o>', {})
+vim.keymap.set('n', '<c-o>', '<c-i>', {})
+
 -- nvim options
 vim.cmd.colorscheme 'catppuccin'
 vim.opt.clipboard = unnamedplus

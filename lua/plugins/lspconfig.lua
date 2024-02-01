@@ -34,7 +34,7 @@ return {
         -- if ruff-lsp isn't respecting ruff.toml, implement the following:
         -- https://github.com/hahuang65/nvim-config/blob/main/lua/plugins/lsp.lua#L91
         lspconfig.ruff_lsp.setup {}
-        --lspconfig.pyright.setup {}
+        lspconfig.pyright.setup {}
 
         -- LspAttach maps keys after the lsp attaches to the current buffer
         vim.api.nvim_create_autocmd('LspAttach', {
