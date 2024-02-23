@@ -23,6 +23,7 @@ local plugins = {
     { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
     { 'neovim/nvim-lspconfig' },
     { 'f-person/git-blame.nvim' },
+    { 'chrisbra/csv.vim' },
 
     { import = 'plugins' }, -- import all plugins from lua/plugins
 }
